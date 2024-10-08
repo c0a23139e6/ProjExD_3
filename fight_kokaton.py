@@ -146,12 +146,13 @@ class Score:
     """
     def __init__(self):
         self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
-        self.score = 0
+        self.score = 0   
         self.img = self.fonto.render(f"スコア:{self.score}", 0, (0,0,255))
 
     def update(self, screen):
          self.img = self.fonto.render(f"スコア:{self.score}", 0, (0,0,255))
          screen.blit(self.img, [100,HEIGHT-50])
+
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
